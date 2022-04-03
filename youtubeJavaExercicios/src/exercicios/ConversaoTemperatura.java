@@ -18,7 +18,7 @@ public class ConversaoTemperatura {
 		//processamento
 		c = (5 * (f - 32)) / 9;
 		//saida 
-		System.out.println("Temperatura em Celsius: " + formatador.format(c) + " 	°C");
+		System.out.println("Temperatura em Celsius: " + formatador.format(c) + " CÂ°");
 		teclado.close();
 		
 		

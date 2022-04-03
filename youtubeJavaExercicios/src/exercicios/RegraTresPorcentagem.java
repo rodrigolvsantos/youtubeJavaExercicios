@@ -7,7 +7,7 @@ public class RegraTresPorcentagem {
 
 	public static void main(String[] args) {
 		/*
-		 * Desenvolva uma aplicação no console (terminal) para calcular o valor da
+		 * Desenvolva uma aplicaÃ§Ã£o no console (terminal) para calcular o valor da
 		 * porcentagem usando Regra de 3, conforme modelo abaixo:
 		 * 
 		 * x% de y = valor
@@ -29,7 +29,7 @@ public class RegraTresPorcentagem {
 		resto = x / 100;
 		resultado = resto * y;
 
-		System.out.println(df.format(x) + "% de " + df.format(y) + " é : " + df.format(resultado));
+		System.out.println(df.format(x) + "% de " + df.format(y) + " Ã© : " + df.format(resultado));
 		// System.out.println(resto);
 		teclado.close();
 
