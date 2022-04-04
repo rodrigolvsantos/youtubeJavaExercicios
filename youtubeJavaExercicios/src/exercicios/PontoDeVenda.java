@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import desconto.Desconto;
 
-public class PontoDeVenda {
+public class PontoDeVenda extends Desconto {
 
 	public static void main(String[] args) {
 		/*PONTO DE VENDA
@@ -22,7 +22,7 @@ public class PontoDeVenda {
 		
 		double x,y;
 		
-		Desconto pdv = new Desconto();
+		PontoDeVenda pdv = new PontoDeVenda();
 		
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("Digite o valor de X: ");
@@ -33,9 +33,9 @@ public class PontoDeVenda {
 		pdv.setX(x);
 		pdv.setY(y);
 		
+	   
+		pdv.desconto(x, y);
 		
-		
-		System.out.println(x + y);
 		
 		teclado.close();
 	}
