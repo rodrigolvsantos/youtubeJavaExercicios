@@ -6,17 +6,10 @@ public class Desconto {
 
 	 private static final DecimalFormat df = new DecimalFormat("0.00");
 
-	private double x;
-	private double y;
+	private double x, y;
+
 	private double resultado;
 
-	public double getResultado() {
-		return resultado;
-	}
-
-	public void setResultado(double resultado) {
-		this.resultado = resultado;
-	}
 
 	public double getY() {
 		return y;
@@ -37,5 +30,8 @@ public class Desconto {
 	double desconto (double x, double y) {
 		resultado = (x * y) / 100;
 		return resultado;
+		
 	}
+	
+	
 }
