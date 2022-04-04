@@ -3,8 +3,9 @@ package exercicios;
 import java.util.Scanner;
 
 import desconto.Desconto;
+import compra.Compra;
 
-public class PontoDeVenda extends Desconto {
+public class PontoDeVenda extends Compra {
 
 	public static void main(String[] args) {
 		/*
@@ -18,8 +19,11 @@ public class PontoDeVenda extends Desconto {
 		 */
 
 		double x, y;
-
+		
+		
+		
 		PontoDeVenda pdv = new PontoDeVenda();
+		
 
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("Digite o valor de X: ");
