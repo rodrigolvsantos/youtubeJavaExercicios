@@ -3,7 +3,9 @@ package exercicios;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class RegraTresPorcentagem {
+import desconto.Desconto;
+
+public class RegraTresPorcentagem extends Desconto {
 
 	public static void main(String[] args) {
 		/*
@@ -14,8 +16,10 @@ public class RegraTresPorcentagem {
 		 * 
 		 * Exemplo: 10% de 200 = 20
 		 */
+		
+		RegraTresPorcentagem rdt = new RegraTresPorcentagem();
 
-		double x, y, resto, resultado;
+		double x, y;
 		Scanner teclado = new Scanner(System.in);
 
 		DecimalFormat df = new DecimalFormat("0");
@@ -26,13 +30,20 @@ public class RegraTresPorcentagem {
 		System.out.print("Digite o valor de Y: ");
 		y = teclado.nextDouble();
 
-		resto = x / 100;
-		resultado = resto * y;
-
-		System.out.println(df.format(x) + "% de " + df.format(y) + " é : " + df.format(resultado));
-		// System.out.println(resto);
+		rdt.setX(x);
+		rdt.setY(y);
+		
+	   
+		rdt.desconto(x, y);
+		
+		
 		teclado.close();
 
+//		System.out.println(df.format(x) + "% de " + df.format(y) + " é : " + df.format(resultado));
+//		// System.out.println(resto);
+		teclado.close();
+
+		
 	}
 
 }
