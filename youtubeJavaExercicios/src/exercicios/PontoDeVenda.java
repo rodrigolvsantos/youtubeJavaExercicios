@@ -34,9 +34,9 @@ public class PontoDeVenda extends Desconto {
 		pdv.setY(y);
 		
 	   
-		pdv.desconto(x, y);
+		//pdv.desconto(x, y);
 		
-		
+		System.out.println("Teste: " + pdv.desconto());
 		teclado.close();
 	}
 
