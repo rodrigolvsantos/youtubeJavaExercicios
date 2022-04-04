@@ -16,7 +16,7 @@ public class RegraTresPorcentagem extends Desconto {
 		 * 
 		 * Exemplo: 10% de 200 = 20
 		 */
-		
+
 		RegraTresPorcentagem rdt = new RegraTresPorcentagem();
 
 		double x, y;
@@ -32,18 +32,12 @@ public class RegraTresPorcentagem extends Desconto {
 
 		rdt.setX(x);
 		rdt.setY(y);
-		
-	   
-		rdt.desconto(x, y);
-		
-		
+
+		System.out
+				.println(df.format(rdt.getX()) + "% de " + df.format(rdt.getY()) + " é : " + df.format(rdt.desconto()));
+
 		teclado.close();
 
-//		System.out.println(df.format(x) + "% de " + df.format(y) + " é : " + df.format(resultado));
-//		// System.out.println(resto);
-		teclado.close();
-
-		
 	}
 
 }
