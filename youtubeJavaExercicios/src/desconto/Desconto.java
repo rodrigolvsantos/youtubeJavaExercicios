@@ -26,9 +26,9 @@ public class Desconto {
 		this.x = x;
 	}
 
-	protected void desconto(double x, double y) {
-		resultado = (this.x / 100) * + this.y;
-		System.out.println(resultado);
+	protected double desconto() {
+		resultado = (this.x / 100) * +this.y;
+		return resultado;
 
 	}
 
