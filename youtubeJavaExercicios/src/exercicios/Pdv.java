@@ -18,7 +18,7 @@ public class Pdv extends Desconto {
 
 		Pdv compra = new Pdv();
 
-		double produto,porcentagem,desconto,total, troco;
+		double produto,porcentagem,desconto,total,calculaDesconto, troco;
 		Scanner teclado = new Scanner(System.in);
 
 		DecimalFormat df = new DecimalFormat("0");
@@ -29,13 +29,22 @@ public class Pdv extends Desconto {
 		System.out.print("Digite o valor do desconto: ");
 		porcentagem = teclado.nextDouble();
 		
-		compra.setX(produto);
-		compra.setY(porcentagem);
+		System.out.print("Digite o valor pago: ");
+		troco = teclado.nextDouble();
 		
-		total = (compra.getX()+ compra.getY()) - compra.desconto();
 		
-		System.out.println(total);
-		System.out.print(compra.getX() - total);
+		compra.setY(produto);
+		compra.setX(porcentagem);
+		
+		desconto = compra.desconto();
+		calculaDesconto = produto - desconto;
+		total = troco - calculaDesconto;
+		
+		System.out.println("Valor do Produto: R$"+produto);
+		System.out.println("Desonto: "+porcentagem+"%");
+		System.out.println("Valor do desonto: R$"+compra.desconto());
+		System.out.println("Valor Pago R$: "+troco);
+		System.out.println("Troco: "+total);
 		
 	
 	}
