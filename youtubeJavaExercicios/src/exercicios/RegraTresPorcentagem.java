@@ -29,14 +29,14 @@ public class RegraTresPorcentagem extends Desconto {
 
 		System.out.print("Digite o valor de Y: ");
 		y = teclado.nextDouble();
-
+		teclado.close();
 		rdt.setX(x);
 		rdt.setY(y);
 
 		System.out
 				.println(df.format(rdt.getX()) + "% de " + df.format(rdt.getY()) + " é : " + df.format(rdt.desconto()));
 
-		teclado.close();
+
 
 	}
 
