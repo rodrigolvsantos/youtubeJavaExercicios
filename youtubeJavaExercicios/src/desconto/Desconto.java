@@ -26,7 +26,7 @@ public class Desconto {
 		this.x = x;
 	}
 
-//	metodo que calucula o desconto
+//	metodo que calcula o desconto
 	
 	protected double desconto() {
 		resultado = (this.x / 100) * +this.y;
