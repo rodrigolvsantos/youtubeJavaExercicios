@@ -32,6 +32,7 @@ public class Pdv extends Desconto {
 		System.out.print("Digite o valor pago: ");
 		troco = teclado.nextDouble();
 		
+		teclado.close();
 		
 		compra.setY(produto);
 		compra.setX(porcentagem);
