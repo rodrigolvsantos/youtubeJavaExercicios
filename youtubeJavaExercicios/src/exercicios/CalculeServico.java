@@ -10,7 +10,14 @@ public class CalculeServico extends Desconto{
 		// TODO Auto-generated method stub
 
 		CalculeServico servico = new CalculeServico();
-		double remuneraMes, calculaImposto, custoOperacional, investimento, desconto, horaTrabalhada, taxaImposto, taxaInvestimento;
+		double remuneraMes, 
+		calculaImposto, 
+		custoOperacional, 
+		investimento, 
+		desconto, 
+		horaTrabalhada, 
+		taxaImposto, 
+		taxaInvestimento;
 
 		taxaImposto = 30;
 
