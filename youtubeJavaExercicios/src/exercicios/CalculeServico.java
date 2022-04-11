@@ -20,8 +20,9 @@ import desconto.Desconto;
 
 public class CalculeServico extends Desconto{
 	
-	
-	
+/*Método que calcula o imposto lendo a classe Desconto no pacote Desconto.
+ * Observe que vc pode criar vários métodos lendo a classe Desconto
+ * */	 	
 private static double imposto ( double remuneracao ) {
 		
 		CalculeServico imposto = new CalculeServico();
@@ -32,6 +33,11 @@ private static double imposto ( double remuneracao ) {
 		resultado = imposto.desconto();
 		return resultado;
 	}
+
+
+/*Método que calcula o investimento lendo a classe Desconto no pacote Desconto.
+* Observe que vc pode criar vários métodos lendo a classe Desconto
+* */	 	
 
 private static double investimento ( double remuneracao ) {
 	
